@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #161616;
+  --text-primary: #fafafa;
+  --text-secondary: rgba(255, 255, 255, 0.55);
+  --text-tertiary: rgba(255, 255, 255, 0.4);
+  --accent-red: #e24b4a;
+  --accent-purple: #534ab7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+/* ── Hero ─────────────────────────────────────────── */
+.slogan {
+  font-family: var(--font-serif), serif;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 1.1;
+  color: #fafafa;
+  margin: 0;
+  text-align: center;
+}
+
+.intro {
+  font-size: 26px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 14px 0 0;
+  text-align: center;
+}
+
+.scroll-hint {
+  margin-top: 40px;
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 640px) {
+  .slogan {
+    font-size: 60px;
+  }
+  .intro {
+    font-size: 17px;
+  }
+}
+
+/* ── Otter Demo Widget (§5 — 视觉定稿,不动) ──────────── */
+.otter-stage {
+  background: #161616;
+  border-radius: 16px;
+  padding: 28px 24px;
+}
+.otter-grid {
+  display: grid;
+  /* 左组(日常)| 80px 分割(含短白线) | 右组(穿越对,18px 紧凑) */
+  grid-template-columns: 1fr 80px 1fr 18px 1fr;
+  gap: 0;
+  align-items: start;
+}
+/* 容器存在于 DOM 仅作分组区分;布局由上面的网格接管 */
+.otter-group {
+  display: contents;
+}
+.otter-col-daily {
+  grid-column: 1;
+}
+.otter-divider {
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+  width: 4px;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 4px;
+}
+.otter-col-otter {
+  grid-column: 3;
+}
+.otter-col-orig {
+  grid-column: 5;
+}
+.otter-phone {
+  background: #0a0a0a;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 9/16;
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  transition: transform 0.15s;
+}
+.otter-phone:active {
+  transform: scale(0.985);
+}
+.otter-cap {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 16px 0 4px;
+}
+.otter-hint {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0;
+}
+.cross-pill {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translate(50%, -50%) scale(1.25);
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #534ab7;
+  padding: 6px 12px;
+  border-radius: 99px;
+  font-size: 11px;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+/* §5.2 移动端:三屏竖排,药丸移到两屏之间,字号略大 */
+@media (max-width: 640px) {
+  .otter-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .otter-col-daily,
+  .otter-divider,
+  .otter-col-otter,
+  .otter-col-orig {
+    grid-column: auto;
+  }
+  /* 竖排时分割线转为水平短白线,夹在日常与穿越对之间 */
+  .otter-divider {
+    width: 96px;
+    height: 4px;
+    align-self: auto;
+  }
+  .cross-pill {
+    top: auto;
+    right: 50%;
+    bottom: -30px;
+    transform: translate(50%, 50%) scale(1.25);
+    font-size: 12px;
+  }
+  .otter-cap {
+    font-size: 18px;
+  }
+  .otter-hint {
+    font-size: 14px;
+  }
+}

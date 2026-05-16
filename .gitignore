@@ -1,0 +1,16 @@
+/node_modules
+/.next
+/out
+/build
+.DS_Store
+*.pem
+npm-debug.log*
+.env*
+next-env.d.ts
+.vercel
+*.tsbuildinfo
+
+# 生成管线 / 实验产物 —— 体积大且部署用不到(用到的成片已在 public/)
+/archive
+/video
+/video-crossover
