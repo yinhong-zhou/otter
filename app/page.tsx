@@ -10,7 +10,10 @@ export default function Home() {
       <SmoothScroll />
       <Hero />
       <DemoSection />
-      <section className="h-screen bg-black">
+      <section className="relative h-screen overflow-hidden bg-black">
+        <h2 className="absolute left-1/2 top-8 z-20 -translate-x-1/2 whitespace-nowrap font-serif text-5xl font-black leading-none text-white md:top-10 md:text-[92px]">
+          装扮大赏
+        </h2>
         <SkinsMarquee />
       </section>
     </main>
