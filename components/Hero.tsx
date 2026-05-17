@@ -47,8 +47,8 @@ export default function Hero() {
     );
     tl.fromTo(hint, { opacity: 0 }, { opacity: 0.6, duration: 0.35 }, 0.4);
 
-    // 停 ~2s → 整体淡出
-    tl.to(all, { opacity: 0, duration: 0.4, ease: "power1.in" }, "+=1.6");
+    // 文字完整出现后空停 3s → 整体淡出
+    tl.to(all, { opacity: 0, duration: 0.4, ease: "power1.in" }, "+=3");
     return tl;
   }, []);
 
