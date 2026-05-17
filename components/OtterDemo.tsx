@@ -59,7 +59,7 @@ const rail = (variant: "otter" | "orig") => (
   </div>
 );
 
-// 左/右各一个声音开关。叠在屏左侧中部,点击不冒泡到换片。
+// 左/右各一个声音开关。叠在屏右侧中部(避开左侧穿越药丸),点击不冒泡到换片。
 const soundBtn = (muted: boolean, toggle: () => void, label: string) => (
   <button
     type="button"
@@ -70,7 +70,7 @@ const soundBtn = (muted: boolean, toggle: () => void, label: string) => (
     aria-label={label}
     style={{
       position: "absolute",
-      left: 8,
+      right: 8,
       top: "50%",
       transform: "translateY(-50%)",
       zIndex: 6,

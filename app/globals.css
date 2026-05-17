@@ -140,6 +140,8 @@ html.lenis body {
   right: -30px;
   transform: translate(50%, -50%) scale(1.25);
   z-index: 5;
+  /* 纯装饰:不拦截点击,避免压住下层静音按钮/换片 */
+  pointer-events: none;
   display: inline-flex;
   align-items: center;
   gap: 5px;
