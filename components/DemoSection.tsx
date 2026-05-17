@@ -6,7 +6,7 @@ export default function DemoSection() {
       <header className="text-center mb-12">
         <p className="text-xs tracking-widest text-white/40 mb-2">DEMO</p>
         <h2 className="text-2xl md:text-3xl font-medium text-white">
-          「 引导文案占位 · 待定 」
+          小水獭平时住在抖音里 会穿越到你看的世界里哦！
         </h2>
       </header>
       <div className="w-full max-w-[1440px] mx-auto">

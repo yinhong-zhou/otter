@@ -118,13 +118,14 @@ export default function OtterDemo() {
   const nextDaily = () => setIDaily((i) => (i + 1) % dList.length);
   const nextPair = () => setIPair((i) => (i + 1) % pList.length);
 
-  // 左组声音 = 日常视频;右组声音 = 水獭穿越视频。原视频永远静音。
+  // 左组声音 = 日常视频;右组声音 = 原视频(最右屏)。
+  // 水獭穿越生成片本身无音轨,故右组取最右屏原视频的真实声。
   const dailyVidRef = useRef<HTMLVideoElement>(null);
-  const otterVidRef = useRef<HTMLVideoElement>(null);
-  // 互斥:同一时刻最多一路有声(日常 / 水獭),开一个自动静音另一个。
-  const [audioSide, setAudioSide] = useState<"none" | "daily" | "otter">("none");
+  const origVidRef = useRef<HTMLVideoElement>(null);
+  // 互斥:同一时刻最多一路有声(日常 / 原视频),开一个自动静音另一个。
+  const [audioSide, setAudioSide] = useState<"none" | "daily" | "orig">("none");
   const dailyMuted = audioSide !== "daily";
-  const otterMuted = audioSide !== "otter";
+  const origMuted = audioSide !== "orig";
 
   // 视频每次切片会按 key 重挂载,muted 复位到属性(true);
   // 依赖里带上当前片源,重挂载后重新套用用户选择的声音状态。
@@ -136,11 +137,11 @@ export default function OtterDemo() {
   }, [dailyMuted, d.video]);
 
   useEffect(() => {
-    const v = otterVidRef.current;
+    const v = origVidRef.current;
     if (!v) return;
-    v.muted = otterMuted;
-    if (!otterMuted) void v.play().catch(() => {});
-  }, [otterMuted, p.otterVideo]);
+    v.muted = origMuted;
+    if (!origMuted) void v.play().catch(() => {});
+  }, [origMuted, p.origVideo]);
 
   return (
     <div className="otter-stage">
@@ -272,9 +273,9 @@ export default function OtterDemo() {
             <div style={{ position: "relative" }}>
               <div className="otter-phone" onClick={nextPair}>
                 {/* 定稿:水獭穿越生成视频,全屏循环;UI 叠其上 */}
+                {/* 水獭穿越生成片无音轨,保持静音(声音走最右屏原视频) */}
                 {p.otterVideo && (
                   <video
-                    ref={otterVidRef}
                     key={p.otterVideo}
                     src={p.otterVideo}
                     autoPlay
@@ -291,12 +292,6 @@ export default function OtterDemo() {
                     }}
                   />
                 )}
-                {p.otterVideo &&
-                  soundBtn(
-                    otterMuted,
-                    () => setAudioSide((s) => (s === "otter" ? "none" : "otter")),
-                    otterMuted ? "开启水獭声音" : "水獭静音"
-                  )}
                 <div
                   style={{
                     position: "absolute",
@@ -381,7 +376,7 @@ export default function OtterDemo() {
             <p className="otter-hint">点中/右屏同步换</p>
           </div>
 
-          {/* 3 · 原视频(永远静音,无声音开关) */}
+          {/* 3 · 原视频(右组声音源:此屏可出声) */}
           <div className="otter-col-orig">
             <div
               className="otter-phone"
@@ -391,6 +386,7 @@ export default function OtterDemo() {
               {/* 定稿:你刚刷到的原视频(截取的 10s 源片),全屏循环;UI 叠其上 */}
               {p.origVideo && (
                 <video
+                  ref={origVidRef}
                   key={p.origVideo}
                   src={p.origVideo}
                   autoPlay
@@ -407,6 +403,12 @@ export default function OtterDemo() {
                   }}
                 />
               )}
+              {p.origVideo &&
+                soundBtn(
+                  origMuted,
+                  () => setAudioSide((s) => (s === "orig" ? "none" : "orig")),
+                  origMuted ? "开启原视频声音" : "原视频静音"
+                )}
               <div
                 style={{
                   position: "absolute",
