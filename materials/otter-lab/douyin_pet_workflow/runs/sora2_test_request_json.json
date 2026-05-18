@@ -1,0 +1,16 @@
+{
+  "endpoint": "https://draw.openai-next.com/v1/videos",
+  "method": "POST",
+  "content_type": "application/json",
+  "transport": "json",
+  "fields": {
+    "prompt": "She turns around and smiles, then slowly walks out of the frame.",
+    "model": "sora-2",
+    "size": "1280x720",
+    "seconds": "8",
+    "input_reference": {
+      "image_url": "<base64 data URL omitted in dry-run summary>",
+      "source_file": "D:\\desktop\\徽客松\\最终定稿\\音乐小海獭_角色设定_final.png"
+    }
+  }
+}

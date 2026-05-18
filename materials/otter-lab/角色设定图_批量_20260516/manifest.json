@@ -1,0 +1,338 @@
+{
+  "api_url": "https://api.openai-next.com/v1/images/generations",
+  "model": "gemini-2.5-flash-image",
+  "size": "1024x1024",
+  "output_dir": "角色设定图_批量_20260516",
+  "items": [
+    {
+      "name": "01_虚构毛球生物_奶油白薄荷绿_潮玩3D",
+      "original_prompt": "一张虚构毛球生物的角色设定图，泡泡玛特潮玩3D渲染风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），奶油白配薄荷绿的配色方案，2.5头身Q版比例，白色背景，统一柔光，设定集排版布局",
+      "status": "ok",
+      "file": "角色设定图_批量_20260516\\01_虚构毛球生物_奶油白薄荷绿_潮玩3D.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913906628005235_4750.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "一张虚构毛球生物的角色设定图，泡泡玛特潮玩3D渲染风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），奶油白配薄荷绿的配色方案，2.5头身Q版比例，白色背景，统一柔光，设定集排版布局\n补充约束：同一张设定图里的所有视图、表情头像和动作姿态必须保持同一个角色设计，五官、身体比例、配色和材质一致；干净的角色设定集网格排版，留白充足，不要文字标签，不要水印，不要logo，不要复杂背景。",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778913906,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913906628005235_4750.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 154,
+          "completion_tokens": 1307,
+          "total_tokens": 1461,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 154,
+          "output_tokens": 1307,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "02_小猫_焦糖棕米白_动画电影",
+      "original_prompt": "一张小猫的角色设定图，皮克斯动画风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），焦糖棕配米白的配色方案，2.5头身Q版比例，白色背景，统一柔光，设定集排版布局",
+      "status": "ok",
+      "file": "角色设定图_批量_20260516\\02_小猫_焦糖棕米白_动画电影.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913917731280703_349.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "一张小猫的角色设定图，皮克斯动画风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），焦糖棕配米白的配色方案，2.5头身Q版比例，白色背景，统一柔光，设定集排版布局\n补充约束：同一张设定图里的所有视图、表情头像和动作姿态必须保持同一个角色设计，五官、身体比例、配色和材质一致；干净的角色设定集网格排版，留白充足，不要文字标签，不要水印，不要logo，不要复杂背景。",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778913917,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913917731280703_349.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 144,
+          "completion_tokens": 1309,
+          "total_tokens": 1453,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 144,
+          "output_tokens": 1309,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "03_仓鼠_樱花粉灰白_毛绒手办",
+      "original_prompt": "一张仓鼠的角色设定图，毛绒手办质感风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），樱花粉配灰白的配色方案，2头身超Q版比例，白色背景，统一柔光，设定集排版布局",
+      "status": "ok",
+      "file": "角色设定图_批量_20260516\\03_仓鼠_樱花粉灰白_毛绒手办.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913930398216862_8547.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "一张仓鼠的角色设定图，毛绒手办质感风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），樱花粉配灰白的配色方案，2头身超Q版比例，白色背景，统一柔光，设定集排版布局\n补充约束：同一张设定图里的所有视图、表情头像和动作姿态必须保持同一个角色设计，五官、身体比例、配色和材质一致；干净的角色设定集网格排版，留白充足，不要文字标签，不要水印，不要logo，不要复杂背景。",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778913930,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913930398216862_8547.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 146,
+          "completion_tokens": 1324,
+          "total_tokens": 1470,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 146,
+          "output_tokens": 1324,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "04_蛋形小怪_雾霾蓝奶黄_黏土定格",
+      "original_prompt": "一张蛋形小怪的角色设定图，黏土定格动画风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），雾霾蓝配奶黄的配色方案，2头身超Q版比例，白色背景，统一柔光，设定集排版布局",
+      "status": "ok",
+      "file": "角色设定图_批量_20260516\\04_蛋形小怪_雾霾蓝奶黄_黏土定格.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913939902007692_7222.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "一张蛋形小怪的角色设定图，黏土定格动画风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），雾霾蓝配奶黄的配色方案，2头身超Q版比例，白色背景，统一柔光，设定集排版布局\n补充约束：同一张设定图里的所有视图、表情头像和动作姿态必须保持同一个角色设计，五官、身体比例、配色和材质一致；干净的角色设定集网格排版，留白充足，不要文字标签，不要水印，不要logo，不要复杂背景。",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778913939,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913939902007692_7222.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 148,
+          "completion_tokens": 1290,
+          "total_tokens": 1438,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 148,
+          "output_tokens": 1290,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "05_类水豚生物_焦糖棕米白_日系赛璐璐",
+      "original_prompt": "一张类水豚生物的角色设定图，日系赛璐璐风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），焦糖棕配米白的配色方案，3头身均衡比例，白色背景，统一柔光，设定集排版布局",
+      "status": "ok",
+      "file": "角色设定图_批量_20260516\\05_类水豚生物_焦糖棕米白_日系赛璐璐.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913951373089381_4985.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "一张类水豚生物的角色设定图，日系赛璐璐风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），焦糖棕配米白的配色方案，3头身均衡比例，白色背景，统一柔光，设定集排版布局\n补充约束：同一张设定图里的所有视图、表情头像和动作姿态必须保持同一个角色设计，五官、身体比例、配色和材质一致；干净的角色设定集网格排版，留白充足，不要文字标签，不要水印，不要logo，不要复杂背景。",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778913951,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913951373089381_4985.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 145,
+          "completion_tokens": 1306,
+          "total_tokens": 1451,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 145,
+          "output_tokens": 1306,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "06_小狗_雾霾蓝奶黄_潮玩3D",
+      "original_prompt": "一张小狗的角色设定图，泡泡玛特潮玩3D渲染风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），雾霾蓝配奶黄的配色方案，2.5头身Q版比例，白色背景，统一柔光，设定集排版布局",
+      "status": "ok",
+      "file": "角色设定图_批量_20260516\\06_小狗_雾霾蓝奶黄_潮玩3D.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913961684782747_8553.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "一张小狗的角色设定图，泡泡玛特潮玩3D渲染风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），雾霾蓝配奶黄的配色方案，2.5头身Q版比例，白色背景，统一柔光，设定集排版布局\n补充约束：同一张设定图里的所有视图、表情头像和动作姿态必须保持同一个角色设计，五官、身体比例、配色和材质一致；干净的角色设定集网格排版，留白充足，不要文字标签，不要水印，不要logo，不要复杂背景。",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778913961,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913961684782747_8553.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 151,
+          "completion_tokens": 1296,
+          "total_tokens": 1447,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 151,
+          "output_tokens": 1296,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "07_虚构毛球生物_樱花粉灰白_黏土定格",
+      "original_prompt": "一张虚构毛球生物的角色设定图，黏土定格动画风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），樱花粉配灰白的配色方案，2头身超Q版比例，白色背景，统一柔光，设定集排版布局",
+      "status": "ok",
+      "file": "角色设定图_批量_20260516\\07_虚构毛球生物_樱花粉灰白_黏土定格.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913974236317978_5344.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "一张虚构毛球生物的角色设定图，黏土定格动画风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），樱花粉配灰白的配色方案，2头身超Q版比例，白色背景，统一柔光，设定集排版布局\n补充约束：同一张设定图里的所有视图、表情头像和动作姿态必须保持同一个角色设计，五官、身体比例、配色和材质一致；干净的角色设定集网格排版，留白充足，不要文字标签，不要水印，不要logo，不要复杂背景。",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778913974,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913974236317978_5344.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 148,
+          "completion_tokens": 1306,
+          "total_tokens": 1454,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 148,
+          "output_tokens": 1306,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "08_小猫_奶油白薄荷绿_毛绒手办",
+      "original_prompt": "一张小猫的角色设定图，毛绒手办质感风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），奶油白配薄荷绿的配色方案，2头身超Q版比例，白色背景，统一柔光，设定集排版布局",
+      "status": "ok",
+      "file": "角色设定图_批量_20260516\\08_小猫_奶油白薄荷绿_毛绒手办.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913984972012767_5029.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "一张小猫的角色设定图，毛绒手办质感风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），奶油白配薄荷绿的配色方案，2头身超Q版比例，白色背景，统一柔光，设定集排版布局\n补充约束：同一张设定图里的所有视图、表情头像和动作姿态必须保持同一个角色设计，五官、身体比例、配色和材质一致；干净的角色设定集网格排版，留白充足，不要文字标签，不要水印，不要logo，不要复杂背景。",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778913984,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913984972012767_5029.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 147,
+          "completion_tokens": 1319,
+          "total_tokens": 1466,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 147,
+          "output_tokens": 1319,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "09_蛋形小怪_焦糖棕米白_动画电影",
+      "original_prompt": "一张蛋形小怪的角色设定图，皮克斯动画风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），焦糖棕配米白的配色方案，2.5头身Q版比例，白色背景，统一柔光，设定集排版布局",
+      "status": "ok",
+      "file": "角色设定图_批量_20260516\\09_蛋形小怪_焦糖棕米白_动画电影.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913995216244473_7328.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "一张蛋形小怪的角色设定图，皮克斯动画风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），焦糖棕配米白的配色方案，2.5头身Q版比例，白色背景，统一柔光，设定集排版布局\n补充约束：同一张设定图里的所有视图、表情头像和动作姿态必须保持同一个角色设计，五官、身体比例、配色和材质一致；干净的角色设定集网格排版，留白充足，不要文字标签，不要水印，不要logo，不要复杂背景。",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778913995,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778913995216244473_7328.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 146,
+          "completion_tokens": 1290,
+          "total_tokens": 1436,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 146,
+          "output_tokens": 1290,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "10_仓鼠_雾霾蓝奶黄_日系赛璐璐",
+      "original_prompt": "一张仓鼠的角色设定图，日系赛璐璐风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），雾霾蓝配奶黄的配色方案，3头身均衡比例，白色背景，统一柔光，设定集排版布局",
+      "status": "ok",
+      "file": "角色设定图_批量_20260516\\10_仓鼠_雾霾蓝奶黄_日系赛璐璐.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914005603275007_3300.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "一张仓鼠的角色设定图，日系赛璐璐风格，包含正面/侧面/背面三视图 + 4个表情头像（开心、好奇、困倦、生气）+ 2个动作姿态（坐着、奔跑），雾霾蓝配奶黄的配色方案，3头身均衡比例，白色背景，统一柔光，设定集排版布局\n补充约束：同一张设定图里的所有视图、表情头像和动作姿态必须保持同一个角色设计，五官、身体比例、配色和材质一致；干净的角色设定集网格排版，留白充足，不要文字标签，不要水印，不要logo，不要复杂背景。",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778914005,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914005603275007_3300.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 144,
+          "completion_tokens": 1290,
+          "total_tokens": 1434,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 144,
+          "output_tokens": 1290,
+          "input_tokens_details": null
+        }
+      }
+    }
+  ]
+}

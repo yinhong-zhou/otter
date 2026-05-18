@@ -1,0 +1,16 @@
+{
+  "source_video_id": "mock_fitness_001",
+  "source_video_summary": "健身打卡视频，博主在跑步机上冲刺，配快节奏音乐，字幕强调坚持和燃脂。",
+  "detected_scene": "家庭跑步机和健身房氛围",
+  "detected_mood": ["热血", "疲惫", "自律"],
+  "detected_objects": ["跑步机", "运动毛巾", "水杯", "节拍音乐"],
+  "detected_actions": ["跑步", "喘气", "擦汗", "坚持不住"],
+  "user_signal": {
+    "watched_seconds": 9,
+    "rewatched": false,
+    "liked": false,
+    "commented": false
+  },
+  "preferred_encounter": "window_peek",
+  "safety_tone": "cute_private_life"
+}

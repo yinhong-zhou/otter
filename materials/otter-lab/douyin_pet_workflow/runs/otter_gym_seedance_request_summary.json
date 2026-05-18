@@ -1,0 +1,29 @@
+{
+  "endpoint": "https://draw.openai-next.com/seedance/v3/contents/generations/tasks",
+  "model": "doubao-seedance-2-0-260128",
+  "resolution": "720p",
+  "ratio": "9:16",
+  "duration": 8,
+  "generate_audio": false,
+  "watermark": false,
+  "source_video_url": "https://api.openai-next.com/fileSystem/download/20260516/d0fd897a48385791d58f918ea262f62d7228edb6812c432ce92404b52d29b01b.mp4",
+  "prompt_file": "D:\\desktop\\徽客松\\douyin_pet_workflow\\runs\\otter_gym_replacement_prompt.txt",
+  "reference_image": "D:\\desktop\\徽客松\\最终定稿\\音乐小海獭_角色设定_final.png",
+  "first_frame": "D:\\desktop\\徽客松\\douyin_pet_workflow\\runs\\source_video_frames\\first_frame.png",
+  "keyframes": [
+    "D:\\desktop\\徽客松\\douyin_pet_workflow\\runs\\source_video_frames\\frame_02s.png",
+    "D:\\desktop\\徽客松\\douyin_pet_workflow\\runs\\source_video_frames\\frame_04s.png",
+    "D:\\desktop\\徽客松\\douyin_pet_workflow\\runs\\source_video_frames\\frame_06s.png"
+  ],
+  "last_frame": "D:\\desktop\\徽客松\\douyin_pet_workflow\\runs\\source_video_frames\\last_frame.png",
+  "content_roles": [
+    "text",
+    "character_reference",
+    "first_frame_reference",
+    "motion_keyframe_01",
+    "motion_keyframe_02",
+    "motion_keyframe_03",
+    "last_frame_reference",
+    "source_video_reference"
+  ]
+}

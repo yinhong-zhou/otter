@@ -1,0 +1,99 @@
+{
+  "generatedAt": "2026-05-18T11:58:07.134Z",
+  "sourceDir": "public/daily",
+  "servedDir": "public/daily",
+  "copiedToPublic": false,
+  "total": 9,
+  "items": [
+    {
+      "id": "video-0001",
+      "title": "1d9cf0594bc3c9222cdbf126f398e134",
+      "sourceFile": "1d9cf0594bc3c9222cdbf126f398e134.mp4",
+      "relativePath": "daily/1d9cf0594bc3c9222cdbf126f398e134.mp4",
+      "publicUrl": "/daily/1d9cf0594bc3c9222cdbf126f398e134.mp4",
+      "bytes": 1954605,
+      "updatedAt": "2026-05-16T15:58:29.196Z",
+      "tags": []
+    },
+    {
+      "id": "video-0002",
+      "title": "97b02360334868910b0d5367b61fbccb",
+      "sourceFile": "97b02360334868910b0d5367b61fbccb.mp4",
+      "relativePath": "daily/97b02360334868910b0d5367b61fbccb.mp4",
+      "publicUrl": "/daily/97b02360334868910b0d5367b61fbccb.mp4",
+      "bytes": 2137992,
+      "updatedAt": "2026-05-16T15:58:29.203Z",
+      "tags": []
+    },
+    {
+      "id": "video-0003",
+      "title": "b043a6fa16b9f795bba04527ec6419bc",
+      "sourceFile": "b043a6fa16b9f795bba04527ec6419bc.mp4",
+      "relativePath": "daily/b043a6fa16b9f795bba04527ec6419bc.mp4",
+      "publicUrl": "/daily/b043a6fa16b9f795bba04527ec6419bc.mp4",
+      "bytes": 537088,
+      "updatedAt": "2026-05-16T15:58:29.205Z",
+      "tags": []
+    },
+    {
+      "id": "video-0004",
+      "title": "b9e05606a178d0f31f9791f832d194f0",
+      "sourceFile": "b9e05606a178d0f31f9791f832d194f0.mp4",
+      "relativePath": "daily/b9e05606a178d0f31f9791f832d194f0.mp4",
+      "publicUrl": "/daily/b9e05606a178d0f31f9791f832d194f0.mp4",
+      "bytes": 1080227,
+      "updatedAt": "2026-05-16T15:58:29.209Z",
+      "tags": []
+    },
+    {
+      "id": "video-0005",
+      "title": "chengguan",
+      "sourceFile": "chengguan.mp4",
+      "relativePath": "daily/chengguan.mp4",
+      "publicUrl": "/daily/chengguan.mp4",
+      "bytes": 2853976,
+      "updatedAt": "2026-05-16T15:58:29.218Z",
+      "tags": []
+    },
+    {
+      "id": "video-0006",
+      "title": "e7e51ff63ab0cc1a525ad974e406ad08",
+      "sourceFile": "e7e51ff63ab0cc1a525ad974e406ad08.mp4",
+      "relativePath": "daily/e7e51ff63ab0cc1a525ad974e406ad08.mp4",
+      "publicUrl": "/daily/e7e51ff63ab0cc1a525ad974e406ad08.mp4",
+      "bytes": 1900749,
+      "updatedAt": "2026-05-16T15:58:29.224Z",
+      "tags": []
+    },
+    {
+      "id": "video-0007",
+      "title": "jianbing",
+      "sourceFile": "jianbing.mp4",
+      "relativePath": "daily/jianbing.mp4",
+      "publicUrl": "/daily/jianbing.mp4",
+      "bytes": 2452735,
+      "updatedAt": "2026-05-16T15:58:29.232Z",
+      "tags": []
+    },
+    {
+      "id": "video-0008",
+      "title": "noodle",
+      "sourceFile": "noodle.mp4",
+      "relativePath": "daily/noodle.mp4",
+      "publicUrl": "/daily/noodle.mp4",
+      "bytes": 3120579,
+      "updatedAt": "2026-05-16T15:58:29.241Z",
+      "tags": []
+    },
+    {
+      "id": "video-0009",
+      "title": "subway",
+      "sourceFile": "subway.mp4",
+      "relativePath": "daily/subway.mp4",
+      "publicUrl": "/daily/subway.mp4",
+      "bytes": 4255703,
+      "updatedAt": "2026-05-16T15:58:29.254Z",
+      "tags": []
+    }
+  ]
+}

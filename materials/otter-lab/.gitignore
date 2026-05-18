@@ -1,0 +1,8 @@
+.env
+*.env
+*.local
+.idea/
+__pycache__/
+**/__pycache__/
+*.pyc
+douyin_pet_workflow/runs/downloads/

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remote Batch Studio</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">REMOTE BATCH STUDIO</p>
+          <h1>远程批量生成与筛选台</h1>
+          <p class="intro">
+            批量调用远程 API 生成视频或图片，只在筛选通过后下载保留项。
+          </p>
+        </div>
+        <div class="hero-actions">
+          <button id="refreshStateBtn" class="ghost-btn">刷新状态</button>
+        </div>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="panel-head">
+          <h2>新建批次</h2>
+          <span id="providerMeta" class="muted"></span>
+        </div>
+        <div class="form-grid">
+          <label>
+            <span>Provider</span>
+            <select id="providerSelect"></select>
+          </label>
+          <label>
+            <span>批次名</span>
+            <input id="batchNameInput" type="text" placeholder="例如：otter-2026-05-18-night" />
+          </label>
+        </div>
+        <label class="prompt-block">
+          <span>Prompts</span>
+          <textarea
+            id="promptInput"
+            placeholder="一行一个 prompt。提交后会逐条发给远程 API。"
+          ></textarea>
+        </label>
+        <div class="submit-row">
+          <button id="submitBatchBtn" class="primary-btn">批量提交</button>
+          <p class="hint">
+            当前工具只保存任务信息和远程结果 URL，保留项才会下载到本地。
+          </p>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <aside class="panel sidebar">
+          <div class="panel-head">
+            <h2>批次列表</h2>
+            <span id="batchCount" class="muted">0</span>
+          </div>
+          <div id="batchList" class="batch-list"></div>
+        </aside>
+
+        <section class="panel content-panel">
+          <div class="panel-head">
+            <div>
+              <h2 id="detailTitle">还没有选中批次</h2>
+              <p id="detailMeta" class="muted">先提交一个批次，或者从左侧选择已有批次。</p>
+            </div>
+            <div class="detail-actions">
+              <button id="pollBatchBtn" class="ghost-btn" disabled>轮询未完成任务</button>
+              <button id="exportPackBtn" class="ghost-btn" disabled>导出重生成包</button>
+              <button id="downloadKeptBtn" class="primary-btn" disabled>下载保留项</button>
+            </div>
+          </div>
+
+          <div id="detailStats" class="stats-row"></div>
+          <div id="statusBar" class="status-bar hidden"></div>
+          <div id="assetGrid" class="asset-grid empty">当前批次还没有素材。</div>
+        </section>
+      </section>
+    </main>
+
+    <template id="batchCardTemplate">
+      <button class="batch-card" type="button">
+        <div class="batch-card-top">
+          <strong class="batch-name"></strong>
+          <span class="batch-kind"></span>
+        </div>
+        <div class="batch-card-meta"></div>
+        <div class="batch-card-counts"></div>
+      </button>
+    </template>
+
+    <template id="assetCardTemplate">
+      <article class="asset-card">
+        <div class="asset-media"></div>
+        <div class="asset-body">
+          <div class="asset-head">
+            <strong class="asset-index"></strong>
+            <span class="asset-status"></span>
+          </div>
+          <p class="asset-prompt"></p>
+          <div class="asset-links"></div>
+          <div class="decision-row">
+            <button data-decision="keep" class="decision-btn keep-btn" type="button">留下</button>
+            <button data-decision="reject" class="decision-btn reject-btn" type="button">淘汰</button>
+            <button data-decision="undecided" class="decision-btn neutral-btn" type="button">清空</button>
+          </div>
+          <pre class="asset-error hidden"></pre>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

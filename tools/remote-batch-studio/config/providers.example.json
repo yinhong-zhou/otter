@@ -1,0 +1,112 @@
+{
+  "providers": {
+    "seedance_video": {
+      "label": "Seedance Video",
+      "kind": "video",
+      "concurrency": 1,
+      "create": {
+        "url": "https://draw.openai-next.com/seedance/v3/contents/generations/tasks",
+        "method": "POST",
+        "headers": {
+          "Authorization": "Bearer {{env.SEEDANCE_API_KEY}}",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "model": "doubao-seedance-2-0-260128",
+          "content": [
+            {
+              "type": "text",
+              "text": "{{prompt}}"
+            }
+          ],
+          "resolution": "720p",
+          "ratio": "9:16",
+          "duration": 8,
+          "generate_audio": true,
+          "watermark": false,
+          "return_last_frame": true
+        }
+      },
+      "poll": {
+        "url": "https://draw.openai-next.com/seedance/v3/contents/generations/tasks/{{taskId}}",
+        "method": "GET",
+        "headers": {
+          "Authorization": "Bearer {{env.SEEDANCE_API_KEY}}"
+        }
+      },
+      "responseTaskIdPaths": [
+        "id",
+        "data.id",
+        "task_id"
+      ],
+      "statusPath": [
+        "status",
+        "data.status"
+      ],
+      "successValues": [
+        "succeeded",
+        "completed"
+      ],
+      "failureValues": [
+        "failed",
+        "error",
+        "cancelled"
+      ],
+      "resultUrlPaths": [
+        "data.video_url",
+        "video_url",
+        "result.video_url",
+        "output.video_url"
+      ],
+      "previewUrlPaths": [
+        "data.cover_url",
+        "cover_url",
+        "result.cover_url"
+      ]
+    },
+    "image_sync_example": {
+      "label": "Image API Example",
+      "kind": "image",
+      "concurrency": 1,
+      "create": {
+        "url": "https://your-image-api.example.com/v1/images/generations",
+        "method": "POST",
+        "headers": {
+          "Authorization": "Bearer {{env.IMAGE_API_KEY}}",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "model": "your-model-name",
+          "prompt": "{{prompt}}",
+          "size": "1024x1024"
+        }
+      },
+      "responseTaskIdPaths": [
+        "id",
+        "data.id"
+      ],
+      "statusPath": [
+        "status",
+        "data.status"
+      ],
+      "successValues": [
+        "succeeded",
+        "completed"
+      ],
+      "failureValues": [
+        "failed",
+        "error"
+      ],
+      "resultUrlPaths": [
+        "data.0.url",
+        "data.url",
+        "url"
+      ],
+      "previewUrlPaths": [
+        "data.0.url",
+        "data.preview_url",
+        "preview_url"
+      ]
+    }
+  }
+}

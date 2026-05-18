@@ -1,0 +1,173 @@
+{
+  "api_url": "https://api.openai-next.com/v1/images/generations",
+  "model": "gemini-2.5-flash-image",
+  "size": "1024x1024",
+  "output_dir": "character_sheets_batch_20260516_set2",
+  "items": [
+    {
+      "name": "01_egg_creature_cream_mint_popmart",
+      "original_prompt": "A character design sheet of a fictional egg-shaped creature pet, Popmart collectible toy 3D render style, including front/side/back three-view orthographic drawings + 4 facial expression close-ups (happy, curious, sleepy, grumpy) + 2 action poses (sitting, running), cream white paired with mint green color scheme, 2.5-head super chibi proportions, oversized glossy eyes with catchlights, smooth matte plastic texture with subtle subsurface scattering, white background, uniform soft studio lighting, character design sheet layout with labels",
+      "status": "ok",
+      "file": "character_sheets_batch_20260516_set2\\01_egg_creature_cream_mint_popmart.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914613867800206_6068.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "A character design sheet of a fictional egg-shaped creature pet, Popmart collectible toy 3D render style, including front/side/back three-view orthographic drawings + 4 facial expression close-ups (happy, curious, sleepy, grumpy) + 2 action poses (sitting, running), cream white paired with mint green color scheme, 2.5-head super chibi proportions, oversized glossy eyes with catchlights, smooth matte plastic texture with subtle subsurface scattering, white background, uniform soft studio lighting, character design sheet layout with labels\nAdditional constraints: keep every view, expression, and pose on the sheet as the same character design; maintain consistent face, silhouette, proportions, materials, and color palette; use a clean grid-based character sheet composition with generous spacing; labels and annotation lines should be minimal and neat when requested; no watermark, no logo, no extra characters, no complex background.",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778914613,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914613867800206_6068.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 186,
+          "completion_tokens": 1324,
+          "total_tokens": 1510,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 186,
+          "output_tokens": 1324,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "02_capybara_creature_caramel_oat_pixar",
+      "original_prompt": "A character design sheet of a fictional capybara-like creature pet, Pixar animation 3D style, including front/side/back three-view orthographic drawings + 4 facial expression close-ups (joyful, puzzled, drowsy, pouty) + 2 action poses (sitting calmly, waddling run), warm caramel brown paired with oat white color scheme, 3-head balanced chibi proportions, velvety fur texture with fine strand detail, expressive large eyes, white background, uniform warm rim lighting, character design sheet layout with clean annotation lines",
+      "status": "ok",
+      "file": "character_sheets_batch_20260516_set2\\02_capybara_creature_caramel_oat_pixar.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914625335012277_9532.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "A character design sheet of a fictional capybara-like creature pet, Pixar animation 3D style, including front/side/back three-view orthographic drawings + 4 facial expression close-ups (joyful, puzzled, drowsy, pouty) + 2 action poses (sitting calmly, waddling run), warm caramel brown paired with oat white color scheme, 3-head balanced chibi proportions, velvety fur texture with fine strand detail, expressive large eyes, white background, uniform warm rim lighting, character design sheet layout with clean annotation lines\nAdditional constraints: keep every view, expression, and pose on the sheet as the same character design; maintain consistent face, silhouette, proportions, materials, and color palette; use a clean grid-based character sheet composition with generous spacing; labels and annotation lines should be minimal and neat when requested; no watermark, no logo, no extra characters, no complex background.",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778914625,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914625335012277_9532.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 188,
+          "completion_tokens": 1290,
+          "total_tokens": 1478,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 188,
+          "output_tokens": 1290,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "03_fluffy_ball_misty_blue_plush",
+      "original_prompt": "A character design sheet of a fictional round fluffy ball creature pet, plush stuffed toy render style, including front/side/back three-view orthographic drawings + 4 facial expression close-ups (delighted, curious, sleepy, startled) + 2 action poses (curled up resting, bouncing), misty blue paired with warm cream yellow color scheme, 2-head ultra-chibi proportions, extremely dense soft fur texture, tiny stubby limbs, bead-like shiny eyes, white background, uniform diffused soft lighting, character design sheet layout",
+      "status": "ok",
+      "file": "character_sheets_batch_20260516_set2\\03_fluffy_ball_misty_blue_plush.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914637316280601_8364.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "A character design sheet of a fictional round fluffy ball creature pet, plush stuffed toy render style, including front/side/back three-view orthographic drawings + 4 facial expression close-ups (delighted, curious, sleepy, startled) + 2 action poses (curled up resting, bouncing), misty blue paired with warm cream yellow color scheme, 2-head ultra-chibi proportions, extremely dense soft fur texture, tiny stubby limbs, bead-like shiny eyes, white background, uniform diffused soft lighting, character design sheet layout\nAdditional constraints: keep every view, expression, and pose on the sheet as the same character design; maintain consistent face, silhouette, proportions, materials, and color palette; use a clean grid-based character sheet composition with generous spacing; labels and annotation lines should be minimal and neat when requested; no watermark, no logo, no extra characters, no complex background.",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778914637,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914637316280601_8364.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 186,
+          "completion_tokens": 1304,
+          "total_tokens": 1490,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 186,
+          "output_tokens": 1304,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "04_hamster_sakura_gray_cel_shading",
+      "original_prompt": "A character design sheet of a hamster pet character, Japanese cel-shading anime illustration style, including front/side/back three-view orthographic drawings + 4 facial expression close-ups (cheerful, inquisitive, drowsy, puffed-cheek angry) + 2 action poses (sitting with chubby cheeks, running with tiny legs blurred), sakura pink paired with soft gray-white color scheme, 2.5-head Q-version chibi proportions, clean ink outlines with flat color fills and two-tone cel shading, white background, uniform flat lighting, character design sheet layout with Japanese annotation style",
+      "status": "ok",
+      "file": "character_sheets_batch_20260516_set2\\04_hamster_sakura_gray_cel_shading.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914651503572045_349.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "A character design sheet of a hamster pet character, Japanese cel-shading anime illustration style, including front/side/back three-view orthographic drawings + 4 facial expression close-ups (cheerful, inquisitive, drowsy, puffed-cheek angry) + 2 action poses (sitting with chubby cheeks, running with tiny legs blurred), sakura pink paired with soft gray-white color scheme, 2.5-head Q-version chibi proportions, clean ink outlines with flat color fills and two-tone cel shading, white background, uniform flat lighting, character design sheet layout with Japanese annotation style\nAdditional constraints: keep every view, expression, and pose on the sheet as the same character design; maintain consistent face, silhouette, proportions, materials, and color palette; use a clean grid-based character sheet composition with generous spacing; labels and annotation lines should be minimal and neat when requested; no watermark, no logo, no extra characters, no complex background.",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778914651,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914651503572045_349.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 196,
+          "completion_tokens": 1290,
+          "total_tokens": 1486,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 196,
+          "output_tokens": 1290,
+          "input_tokens_details": null
+        }
+      }
+    },
+    {
+      "name": "05_small_egg_creature_fog_blue_clay",
+      "original_prompt": "A character design sheet of a fictional small egg-shaped creature pet, clay stop-motion animation style (Aardman / Laika aesthetic), including front/side/back three-view orthographic drawings + 4 facial expression close-ups (gleeful, wondering, yawning, grumbling) + 2 action poses (waddling stand, tiptoeing sneak), fog blue paired with butter yellow color scheme, 2.5-head chibi proportions, visible clay fingerprint texture on surface, hand-sculpted imperfect edges, expressive mouth shapes, white background, uniform even studio lighting, character design sheet layout",
+      "status": "ok",
+      "file": "character_sheets_batch_20260516_set2\\05_small_egg_creature_fog_blue_clay.png",
+      "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914668323822163_8281.png",
+      "request": {
+        "model": "gemini-2.5-flash-image",
+        "prompt": "A character design sheet of a fictional small egg-shaped creature pet, clay stop-motion animation style (Aardman / Laika aesthetic), including front/side/back three-view orthographic drawings + 4 facial expression close-ups (gleeful, wondering, yawning, grumbling) + 2 action poses (waddling stand, tiptoeing sneak), fog blue paired with butter yellow color scheme, 2.5-head chibi proportions, visible clay fingerprint texture on surface, hand-sculpted imperfect edges, expressive mouth shapes, white background, uniform even studio lighting, character design sheet layout\nAdditional constraints: keep every view, expression, and pose on the sheet as the same character design; maintain consistent face, silhouette, proportions, materials, and color palette; use a clean grid-based character sheet composition with generous spacing; labels and annotation lines should be minimal and neat when requested; no watermark, no logo, no extra characters, no complex background.",
+        "n": 1,
+        "size": "1024x1024"
+      },
+      "response": {
+        "created": 1778914668,
+        "data": [
+          {
+            "url": "https://api.openai-next.com/fileSystem/response_images/4470/2026/05/16/1778914668323822163_8281.png"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 200,
+          "completion_tokens": 1324,
+          "total_tokens": 1524,
+          "prompt_tokens_details": {},
+          "completion_tokens_details": {
+            "image_tokens": 1290
+          },
+          "input_tokens": 200,
+          "output_tokens": 1324,
+          "input_tokens_details": null
+        }
+      }
+    }
+  ]
+}

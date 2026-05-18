@@ -1,0 +1,20 @@
+{
+  "data": {
+    "id": 94499,
+    "file_hash": "d0fd897a48385791d58f918ea262f62d7228edb6812c432ce92404b52d29b01b",
+    "original_name": "6d80b3c31279e53146b3c5aa41008645.mp4",
+    "file_path": "uploads/20260516/d0fd897a48385791d58f918ea262f62d7228edb6812c432ce92404b52d29b01b.mp4",
+    "file_size": 1117486,
+    "mime_type": "video/mp4",
+    "upload_time": 1778943046,
+    "reference_count": 1,
+    "uploader_id": 0,
+    "status": 1,
+    "created_at": 1778943046,
+    "updated_at": 1778943046,
+    "url": ""
+  },
+  "message": "文件上传成功",
+  "success": true,
+  "url": "https://api.openai-next.com/fileSystem/download/20260516/d0fd897a48385791d58f918ea262f62d7228edb6812c432ce92404b52d29b01b.mp4"
+}

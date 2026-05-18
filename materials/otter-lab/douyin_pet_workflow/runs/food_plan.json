@@ -1,0 +1,123 @@
+{
+  "version": "0.1",
+  "goal": "根据上一条抖音视频语义，将神奇水獭切换为对应形象，并生成视频任务与原生卡片文案。",
+  "inputs": {
+    "context_file": "D:\\desktop\\徽客松\\douyin_pet_workflow\\examples\\video_context_food_stall.json",
+    "character_file": "D:\\desktop\\徽客松\\douyin_pet_workflow\\characters\\magic_otter.json"
+  },
+  "context": {
+    "source_video_id": "mock_food_001",
+    "source_video_summary": "本地生活探店视频，镜头拍到夜市煎饼摊、滋滋作响的铁板、排队的人和老板快速翻面。",
+    "detected_scene": "夜市煎饼摊",
+    "detected_mood": [
+      "热闹",
+      "烟火气",
+      "好吃"
+    ],
+    "detected_objects": [
+      "煎饼摊",
+      "铁板",
+      "铲子",
+      "小推车",
+      "排队人群"
+    ],
+    "detected_actions": [
+      "摊饼",
+      "翻面",
+      "手忙脚乱",
+      "递给路人"
+    ],
+    "user_signal": {
+      "watched_seconds": 11,
+      "rewatched": true,
+      "liked": true,
+      "commented": false
+    },
+    "preferred_encounter": "street_encounter",
+    "safety_tone": "cute_daily_comedy"
+  },
+  "character": {
+    "id": "magic_otter",
+    "display_name": "神奇水獭",
+    "reference_image": "../../最终定稿/音乐小海獭_角色设定_final.png",
+    "reference_image_resolved": "D:\\desktop\\徽客松\\最终定稿\\音乐小海獭_角色设定_final.png"
+  },
+  "decision": {
+    "encounter_mode": "street_encounter",
+    "encounter_mode_name": "街头偶遇",
+    "otter_variant": {
+      "world_role": "临时接管夜市摊位的笨手笨脚小摊主",
+      "costume": "小围裙、一次性厨师帽、保留深蓝灰大耳机，爪子上沾了一点面糊",
+      "action": "它试图摊煎饼，面糊转成一个像音符的形状，翻面失败后慌张抬头看镜头，把成品递给路人",
+      "tone": "街头烟火气里的轻喜剧，可爱、热闹、生活化",
+      "safety": "干净食物质感，不出现危险火焰和烫伤"
+    }
+  },
+  "card": {
+    "card_type": "street_encounter",
+    "card_type_name": "街头偶遇",
+    "title": "你在抖音街头撞见了它",
+    "subtitle": "你刚刷到「夜市煎饼摊」，下一秒就在街角拍到它。",
+    "badges": [
+      "AI 实时",
+      "REC"
+    ],
+    "camera_overlay": "手机摄像机，REC 红点，轻微手持感，用户像路人一样偷拍到它",
+    "light_interactions": [
+      "拍一拍",
+      "敲窗",
+      "塞吃的"
+    ],
+    "heavy_interactions": [
+      "A：把它拉回来",
+      "B：让它继续演下去"
+    ],
+    "why_now": {
+      "source_video_id": "mock_food_001",
+      "source_scene": "夜市煎饼摊",
+      "source_mood": [
+        "热闹",
+        "烟火气",
+        "好吃"
+      ],
+      "otter_role": "临时接管夜市摊位的笨手笨脚小摊主"
+    }
+  },
+  "prompts": {
+    "video_prompt": "生成一条 5 秒竖屏抖音信息流原生 AI 虚拟宠物视频。\n产品设定：用户不是在养宠物，而是在刷推荐页时偶然撞见一只生活在抖音里的神奇水獭。\n角色必须参考传入图片：神奇水獭，圆润短腿、奶油浅棕毛色、深棕小爪子和尾巴，必须保留深蓝灰大耳机。\n把上一条视频里的主体角色或场景关系，切换成这只水獭来演；不要生成普通人类主角。\n上一条视频语义：本地生活探店视频，镜头拍到夜市煎饼摊、滋滋作响的铁板、排队的人和老板快速翻面。\n检测场景：夜市煎饼摊\n检测情绪：热闹、烟火气、好吃\n关键物件：煎饼摊、铁板、铲子、小推车、排队人群\n关键动作：摊饼、翻面、手忙脚乱、递给路人\n本次相遇姿态：街头偶遇。手机摄像机，REC 红点，轻微手持感，用户像路人一样偷拍到它\n水獭本次身份：临时接管夜市摊位的笨手笨脚小摊主\n形象切换：小围裙、一次性厨师帽、保留深蓝灰大耳机，爪子上沾了一点面糊\n剧情动作：它试图摊煎饼，面糊转成一个像音符的形状，翻面失败后慌张抬头看镜头，把成品递给路人\n情绪基调：街头烟火气里的轻喜剧，可爱、热闹、生活化\n画风：可爱画风，软萌、干净、明亮，适合作为抖音原生宠物卡片；可以有轻微手持感或监控感，但主体清晰。\n构图：9:16 竖屏，水獭占画面中心或中下部，保留一点抖音卡片 UI 留白，镜头运动自然。\n生成同步声音：环境声要贴近场景，水獭可以有一声很短的可爱反应或吐槽。\n安全约束：干净食物质感，不出现危险火焰和烫伤，不要水印，不要 logo，不要真实血腥，不要令人不适的恐怖细节。",
+    "cover_image_prompt": "生成一张抖音信息流原生宠物卡片封面图，9:16 竖版。\n角色：参考图中的神奇水獭，保留深蓝灰大耳机、圆润短腿水獭外形和奶油浅棕毛色。\n上一条视频场景：夜市煎饼摊\n相遇姿态：街头偶遇\n形象切换：小围裙、一次性厨师帽、保留深蓝灰大耳机，爪子上沾了一点面糊\n画面动作：它试图摊煎饼，面糊转成一个像音符的形状，翻面失败后慌张抬头看镜头，把成品递给路人\n风格：可爱画风，抖音原生卡片，画面干净，强记忆点，白色或浅色 UI 留白区域。\n不需要生成真实 UI 字体；不要水印，不要 logo。"
+  },
+  "ark": {
+    "tasks_url": "https://ark.cn-beijing.volces.com/api/v3/contents/generations/tasks",
+    "model": "doubao-seedance-2-0-260128",
+    "resolution": "720p",
+    "ratio": "9:16",
+    "duration": 5,
+    "generate_audio": true,
+    "watermark": false,
+    "seed": -1,
+    "safety_identifier": null
+  },
+  "ark_request_preview": {
+    "model": "doubao-seedance-2-0-260128",
+    "content": [
+      {
+        "type": "text",
+        "text": "生成一条 5 秒竖屏抖音信息流原生 AI 虚拟宠物视频。\n产品设定：用户不是在养宠物，而是在刷推荐页时偶然撞见一只生活在抖音里的神奇水獭。\n角色必须参考传入图片：神奇水獭，圆润短腿、奶油浅棕毛色、深棕小爪子和尾巴，必须保留深蓝灰大耳机。\n把上一条视频里的主体角色或场景关系，切换成这只水獭来演；不要生成普通人类主角。\n上一条视频语义：本地生活探店视频，镜头拍到夜市煎饼摊、滋滋作响的铁板、排队的人和老板快速翻面。\n检测场景：夜市煎饼摊\n检测情绪：热闹、烟火气、好吃\n关键物件：煎饼摊、铁板、铲子、小推车、排队人群\n关键动作：摊饼、翻面、手忙脚乱、递给路人\n本次相遇姿态：街头偶遇。手机摄像机，REC 红点，轻微手持感，用户像路人一样偷拍到它\n水獭本次身份：临时接管夜市摊位的笨手笨脚小摊主\n形象切换：小围裙、一次性厨师帽、保留深蓝灰大耳机，爪子上沾了一点面糊\n剧情动作：它试图摊煎饼，面糊转成一个像音符的形状，翻面失败后慌张抬头看镜头，把成品递给路人\n情绪基调：街头烟火气里的轻喜剧，可爱、热闹、生活化\n画风：可爱画风，软萌、干净、明亮，适合作为抖音原生宠物卡片；可以有轻微手持感或监控感，但主体清晰。\n构图：9:16 竖屏，水獭占画面中心或中下部，保留一点抖音卡片 UI 留白，镜头运动自然。\n生成同步声音：环境声要贴近场景，水獭可以有一声很短的可爱反应或吐槽。\n安全约束：干净食物质感，不出现危险火焰和烫伤，不要水印，不要 logo，不要真实血腥，不要令人不适的恐怖细节。"
+      },
+      {
+        "type": "image_url",
+        "image_url": {
+          "url": "<base64 reference image omitted in preview>"
+        },
+        "role": "reference_image"
+      }
+    ],
+    "resolution": "720p",
+    "ratio": "9:16",
+    "duration": 5,
+    "generate_audio": true,
+    "watermark": false,
+    "return_last_frame": true
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-05-18T10:27:02.568Z",
+  "contextsDir": "徽客松/douyin_pet_workflow/examples",
+  "workflowScript": "徽客松/douyin_pet_workflow/workflow.py",
+  "outDir": "徽客松/douyin_pet_workflow/runs/batch/2026-05-18T10-27-02-223Z",
+  "total": 3,
+  "success": 3,
+  "failed": 0,
+  "items": [
+    {
+      "contextFile": "徽客松/douyin_pet_workflow/examples/video_context_fitness.json",
+      "planFile": "徽客松/douyin_pet_workflow/runs/batch/2026-05-18T10-27-02-223Z/video_context_fitness.plan.json",
+      "encounterMode": "window_peek",
+      "encounterModeName": "窗边偷窥",
+      "title": "它好像被你刚刷的视频影响了",
+      "subtitle": "你刚刷到「家庭跑步机和健身房氛围」，路过窗外时发现它正在跟着学。"
+    },
+    {
+      "contextFile": "徽客松/douyin_pet_workflow/examples/video_context_food_stall.json",
+      "planFile": "徽客松/douyin_pet_workflow/runs/batch/2026-05-18T10-27-02-223Z/video_context_food_stall.plan.json",
+      "encounterMode": "street_encounter",
+      "encounterModeName": "街头偶遇",
+      "title": "你在抖音街头撞见了它",
+      "subtitle": "你刚刷到「夜市煎饼摊」，下一秒就在街角拍到它。"
+    },
+    {
+      "contextFile": "徽客松/douyin_pet_workflow/examples/video_context_normandy.json",
+      "planFile": "徽客松/douyin_pet_workflow/runs/batch/2026-05-18T10-27-02-223Z/video_context_normandy.plan.json",
+      "encounterMode": "portal_cameo",
+      "encounterModeName": "穿越客串",
+      "title": "它刚刚串台到诺曼底海滩抢滩",
+      "subtitle": "你刚刷到「诺曼底海滩抢滩」，它也掉进了这个平行宇宙。"
+    }
+  ]
+}

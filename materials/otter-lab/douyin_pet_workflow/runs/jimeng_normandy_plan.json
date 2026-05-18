@@ -1,0 +1,126 @@
+{
+  "version": "0.1",
+  "goal": "根据上一条抖音视频语义，将神奇水獭切换为对应形象，并生成视频任务与原生卡片文案。",
+  "inputs": {
+    "context_file": "D:\\desktop\\徽客松\\douyin_pet_workflow\\examples\\video_context_normandy.json",
+    "character_file": "D:\\desktop\\徽客松\\douyin_pet_workflow\\characters\\magic_otter.json"
+  },
+  "context": {
+    "source_video_id": "mock_normandy_001",
+    "source_video_url": "https://filesystem.site/cdn/20251030/javYrU4etHVFDqg8by7mViTWH1MOZy.mp4",
+    "reference_timestamps": "1,3",
+    "source_video_summary": "历史战争解说视频，内容是诺曼底登陆，画面包括海滩、登陆艇、烟雾、爆炸、水面和士兵推进。",
+    "detected_scene": "诺曼底海滩抢滩",
+    "detected_mood": [
+      "紧张",
+      "史诗",
+      "荒诞反差"
+    ],
+    "detected_objects": [
+      "海滩",
+      "登陆艇",
+      "钢盔",
+      "无线电",
+      "烟雾",
+      "水花"
+    ],
+    "detected_actions": [
+      "抢滩",
+      "趴下躲避",
+      "奔跑",
+      "回头看镜头"
+    ],
+    "user_signal": {
+      "watched_seconds": 18,
+      "rewatched": false,
+      "liked": false,
+      "commented": false
+    },
+    "preferred_encounter": "portal_cameo",
+    "safety_tone": "cute_non_graphic_parody"
+  },
+  "character": {
+    "id": "magic_otter",
+    "display_name": "神奇水獭",
+    "reference_image": "../../最终定稿/音乐小海獭_角色设定_final.png",
+    "reference_image_resolved": "D:\\desktop\\徽客松\\最终定稿\\音乐小海獭_角色设定_final.png"
+  },
+  "decision": {
+    "encounter_mode": "portal_cameo",
+    "encounter_mode_name": "穿越客串",
+    "otter_variant": {
+      "world_role": "误入战争历史片场的迷路小水獭战地客串",
+      "costume": "小钢盔、湿漉漉的救生背心、保留深蓝灰大耳机，肩上背一个夸张玩具 AK 形状道具或玩具无线电",
+      "action": "它被海浪拍到沙滩上，狼狈趴下又迅速爬起，回头发现镜头后紧张地比嘘，随后抱着道具向前小跑两步",
+      "tone": "可爱荒诞反差，像严肃历史视频里突然串台进来的软萌角色",
+      "safety": "非写实、无血腥、无受伤、无真实开火，所有危险道具都玩具化和舞台道具化"
+    }
+  },
+  "card": {
+    "card_type": "portal_cameo",
+    "card_type_name": "穿越客串",
+    "title": "它刚刚串台到诺曼底海滩抢滩",
+    "subtitle": "你刚刷到「诺曼底海滩抢滩」，它也掉进了这个平行宇宙。",
+    "badges": [
+      "AI 实时",
+      "REC"
+    ],
+    "camera_overlay": "跟随上一条视频的风格，角标 AI 实时，像它串台进了刚刷视频的平行宇宙",
+    "light_interactions": [
+      "拍一拍",
+      "敲窗",
+      "塞吃的"
+    ],
+    "heavy_interactions": [
+      "A：把它拉回来",
+      "B：让它继续演下去"
+    ],
+    "why_now": {
+      "source_video_id": "mock_normandy_001",
+      "source_scene": "诺曼底海滩抢滩",
+      "source_mood": [
+        "紧张",
+        "史诗",
+        "荒诞反差"
+      ],
+      "otter_role": "误入战争历史片场的迷路小水獭战地客串"
+    }
+  },
+  "prompts": {
+    "video_prompt": "生成一条 5 秒竖屏抖音信息流原生 AI 虚拟宠物视频。\n产品设定：用户不是在养宠物，而是在刷推荐页时偶然撞见一只生活在抖音里的神奇水獭。\n角色必须参考传入图片：神奇水獭，圆润短腿、奶油浅棕毛色、深棕小爪子和尾巴，必须保留深蓝灰大耳机。\n把上一条视频里的主体角色或场景关系，切换成这只水獭来演；不要生成普通人类主角。\n上一条视频语义：历史战争解说视频，内容是诺曼底登陆，画面包括海滩、登陆艇、烟雾、爆炸、水面和士兵推进。\n检测场景：诺曼底海滩抢滩\n检测情绪：紧张、史诗、荒诞反差\n关键物件：海滩、登陆艇、钢盔、无线电、烟雾、水花\n关键动作：抢滩、趴下躲避、奔跑、回头看镜头\n本次相遇姿态：穿越客串。跟随上一条视频的风格，角标 AI 实时，像它串台进了刚刷视频的平行宇宙\n水獭本次身份：误入战争历史片场的迷路小水獭战地客串\n形象切换：小钢盔、湿漉漉的救生背心、保留深蓝灰大耳机，肩上背一个夸张玩具 AK 形状道具或玩具无线电\n剧情动作：它被海浪拍到沙滩上，狼狈趴下又迅速爬起，回头发现镜头后紧张地比嘘，随后抱着道具向前小跑两步\n情绪基调：可爱荒诞反差，像严肃历史视频里突然串台进来的软萌角色\n画风：可爱画风，软萌、干净、明亮，适合作为抖音原生宠物卡片；可以有轻微手持感或监控感，但主体清晰。\n构图：9:16 竖屏，水獭占画面中心或中下部，保留一点抖音卡片 UI 留白，镜头运动自然。\n生成同步声音：环境声要贴近场景，水獭可以有一声很短的可爱反应或吐槽。\n安全约束：非写实、无血腥、无受伤、无真实开火，所有危险道具都玩具化和舞台道具化，不要水印，不要 logo，不要真实血腥，不要令人不适的恐怖细节。",
+    "cover_image_prompt": "生成一张抖音信息流原生宠物卡片封面图，9:16 竖版。\n角色：参考图中的神奇水獭，保留深蓝灰大耳机、圆润短腿水獭外形和奶油浅棕毛色。\n上一条视频场景：诺曼底海滩抢滩\n相遇姿态：穿越客串\n形象切换：小钢盔、湿漉漉的救生背心、保留深蓝灰大耳机，肩上背一个夸张玩具 AK 形状道具或玩具无线电\n画面动作：它被海浪拍到沙滩上，狼狈趴下又迅速爬起，回头发现镜头后紧张地比嘘，随后抱着道具向前小跑两步\n风格：可爱画风，抖音原生卡片，画面干净，强记忆点，白色或浅色 UI 留白区域。\n不需要生成真实 UI 字体；不要水印，不要 logo。"
+  },
+  "ark": {
+    "tasks_url": "https://draw.openai-next.com/seedance/v3/contents/generations/tasks",
+    "model": "doubao-seedance-2-0-260128",
+    "resolution": "720p",
+    "ratio": "9:16",
+    "duration": 5,
+    "generate_audio": true,
+    "watermark": false,
+    "seed": -1,
+    "safety_identifier": null
+  },
+  "ark_request_preview": {
+    "model": "doubao-seedance-2-0-260128",
+    "content": [
+      {
+        "type": "text",
+        "text": "生成一条 5 秒竖屏抖音信息流原生 AI 虚拟宠物视频。\n产品设定：用户不是在养宠物，而是在刷推荐页时偶然撞见一只生活在抖音里的神奇水獭。\n角色必须参考传入图片：神奇水獭，圆润短腿、奶油浅棕毛色、深棕小爪子和尾巴，必须保留深蓝灰大耳机。\n把上一条视频里的主体角色或场景关系，切换成这只水獭来演；不要生成普通人类主角。\n上一条视频语义：历史战争解说视频，内容是诺曼底登陆，画面包括海滩、登陆艇、烟雾、爆炸、水面和士兵推进。\n检测场景：诺曼底海滩抢滩\n检测情绪：紧张、史诗、荒诞反差\n关键物件：海滩、登陆艇、钢盔、无线电、烟雾、水花\n关键动作：抢滩、趴下躲避、奔跑、回头看镜头\n本次相遇姿态：穿越客串。跟随上一条视频的风格，角标 AI 实时，像它串台进了刚刷视频的平行宇宙\n水獭本次身份：误入战争历史片场的迷路小水獭战地客串\n形象切换：小钢盔、湿漉漉的救生背心、保留深蓝灰大耳机，肩上背一个夸张玩具 AK 形状道具或玩具无线电\n剧情动作：它被海浪拍到沙滩上，狼狈趴下又迅速爬起，回头发现镜头后紧张地比嘘，随后抱着道具向前小跑两步\n情绪基调：可爱荒诞反差，像严肃历史视频里突然串台进来的软萌角色\n画风：可爱画风，软萌、干净、明亮，适合作为抖音原生宠物卡片；可以有轻微手持感或监控感，但主体清晰。\n构图：9:16 竖屏，水獭占画面中心或中下部，保留一点抖音卡片 UI 留白，镜头运动自然。\n生成同步声音：环境声要贴近场景，水獭可以有一声很短的可爱反应或吐槽。\n安全约束：非写实、无血腥、无受伤、无真实开火，所有危险道具都玩具化和舞台道具化，不要水印，不要 logo，不要真实血腥，不要令人不适的恐怖细节。"
+      },
+      {
+        "type": "image_url",
+        "image_url": {
+          "url": "<base64 reference image omitted in preview>"
+        },
+        "role": "reference_image"
+      }
+    ],
+    "resolution": "720p",
+    "ratio": "9:16",
+    "duration": 5,
+    "generate_audio": true,
+    "watermark": false,
+    "return_last_frame": true
+  }
+}

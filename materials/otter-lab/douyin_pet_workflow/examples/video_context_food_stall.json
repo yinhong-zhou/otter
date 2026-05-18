@@ -1,0 +1,16 @@
+{
+  "source_video_id": "mock_food_001",
+  "source_video_summary": "本地生活探店视频，镜头拍到夜市煎饼摊、滋滋作响的铁板、排队的人和老板快速翻面。",
+  "detected_scene": "夜市煎饼摊",
+  "detected_mood": ["热闹", "烟火气", "好吃"],
+  "detected_objects": ["煎饼摊", "铁板", "铲子", "小推车", "排队人群"],
+  "detected_actions": ["摊饼", "翻面", "手忙脚乱", "递给路人"],
+  "user_signal": {
+    "watched_seconds": 11,
+    "rewatched": true,
+    "liked": true,
+    "commented": false
+  },
+  "preferred_encounter": "street_encounter",
+  "safety_tone": "cute_daily_comedy"
+}

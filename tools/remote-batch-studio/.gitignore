@@ -1,0 +1,7 @@
+node_modules/
+config/providers.json
+data/state.json
+downloads/*
+!downloads/.gitkeep
+server.stdout.log
+server.stderr.log

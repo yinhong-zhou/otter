@@ -1,0 +1,18 @@
+{
+  "source_video_id": "mock_normandy_001",
+  "source_video_url": "https://filesystem.site/cdn/20251030/javYrU4etHVFDqg8by7mViTWH1MOZy.mp4",
+  "reference_timestamps": "1,3",
+  "source_video_summary": "历史战争解说视频，内容是诺曼底登陆，画面包括海滩、登陆艇、烟雾、爆炸、水面和士兵推进。",
+  "detected_scene": "诺曼底海滩抢滩",
+  "detected_mood": ["紧张", "史诗", "荒诞反差"],
+  "detected_objects": ["海滩", "登陆艇", "钢盔", "无线电", "烟雾", "水花"],
+  "detected_actions": ["抢滩", "趴下躲避", "奔跑", "回头看镜头"],
+  "user_signal": {
+    "watched_seconds": 18,
+    "rewatched": false,
+    "liked": false,
+    "commented": false
+  },
+  "preferred_encounter": "portal_cameo",
+  "safety_tone": "cute_non_graphic_parody"
+}
